@@ -1,10 +1,7 @@
-// src/App.jsx
 import { useState } from "react";
-import LoginScreen from "./components/Login";
+import LoginScreen from "./components/Login.jsx";
 
 function App() {
-  var [count, setCount] = useState(0);
-
   return (
     <>
       <LoginScreen />
