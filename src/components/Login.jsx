@@ -1,6 +1,13 @@
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 function LoginScreen() {
+  const navigate = useNavigate();
+
+  const OgrenciEkraninayolla = () => {
+    navigate("/OgrenciScreen");
+  };
+
   return (
     <div className="App">
       <div className="login-container">
@@ -11,7 +18,7 @@ function LoginScreen() {
         <div className="input-group">
           <input type="password" placeholder="Şifre" />
         </div>
-        <button>Giriş Yap</button>
+        <button onClick={OgrenciEkraninayolla}>Giriş Yap</button>
       </div>
     </div>
   );
